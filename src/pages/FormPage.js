@@ -9,7 +9,7 @@ const passwordRules = {
   required: true,
   message: "please input ur password"
 };
-
+//高阶函数装饰器，装饰在props里面的this.props.form
 @Form.create()
 class FormPage extends Component {
   submit = () => {
