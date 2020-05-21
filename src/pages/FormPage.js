@@ -14,6 +14,7 @@ const passwordRules = {
 class FormPage extends Component {
   submit = () => {
     const { getFieldsValue, getFieldValue, validateFields } = this.props.form;
+    //表单验证
     validateFields((err, values) => {
       if (err) {
         console.log("err", err);
